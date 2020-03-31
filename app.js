@@ -113,16 +113,23 @@ let el = document.querySelectorAll('.card');
 // console.log(el);
 
 btnAll.onclick = function() {
-	let i;
-	for (i = 0; i > el.length; i++) {
-		el[i].classList.toggle('hidden');
-		console.log(el);
-	}
+	console.log(el);
+	el.classList.toggle('hidden');
+
+	// let i;
+	// for (i = 0; i > el.length; i++) {
+	// 	el[i].classList.toggle('hidden');
+	// 	console.log(el);
+	// }
 };
 
-btnDelivery.onclick = function() {};
+btnDelivery.onclick = function() {
+	alert("Get's Delivery Options");
+};
 
-btnTakeout.onclick = function() {};
+btnTakeout.onclick = function() {
+	alert("Get's Takeout Only Options");
+};
 
 // function toggler() {
 // 	console.log(el);
