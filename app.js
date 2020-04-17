@@ -6,7 +6,7 @@ const restaurants = [
 		'phone-number': '(307) 264-1996',
 		'button-text': 'Order By Phone',
 		'button-url': 'tel:(307) 264-1996',
-		'menu-url': 'https://www.jacksonholebbq.com/menu'
+		'menu-url': 'https://www.jacksonholebbq.com/menu',
 	},
 	{
 		restaurant: 'Bin22',
@@ -16,7 +16,7 @@ const restaurants = [
 		'phone-number': '',
 		'button-text': 'Online Menu',
 		'button-url': 'https://bin-22-wine.myshopify.com/',
-		'menu-url': ''
+		'menu-url': '',
 	},
 	{
 		restaurant: 'Bubba’s Bar-B-Que',
@@ -26,7 +26,7 @@ const restaurants = [
 		'phone-number': '(307) 733-2288',
 		'button-text': 'Order By Phone',
 		'button-url': 'tel:(307) 733-2288',
-		'menu-url': 'https://bubbasjh.com/'
+		'menu-url': 'https://bubbasjh.com/',
 	},
 	{
 		restaurant: 'Cafe Genevieve',
@@ -36,7 +36,7 @@ const restaurants = [
 		'phone-number': '(307) 732-1910',
 		'button-text': 'Order By Phone',
 		'button-url': 'tel:(307) 732-1910',
-		'menu-url': 'https://genevievejh.com/'
+		'menu-url': 'https://genevievejh.com/',
 	},
 	{
 		restaurant: 'Calico',
@@ -45,7 +45,7 @@ const restaurants = [
 		'phone-number': '(307) 200-9631',
 		'button-text': 'Order By Phone',
 		'button-url': 'tel:307-200-9631',
-		'menu-url': 'http://www.calicorestaurant.com/menu'
+		'menu-url': 'http://www.calicorestaurant.com/menu',
 	},
 	{
 		restaurant: 'Hatch',
@@ -55,7 +55,7 @@ const restaurants = [
 		'phone-number': '(307) 203-2780',
 		'button-text': 'Online Menu',
 		'button-url': 'https://direct.chownow.com/order/17777/locations/25465',
-		'menu-url': ''
+		'menu-url': '',
 	},
 	{
 		restaurant: 'Picas',
@@ -65,7 +65,7 @@ const restaurants = [
 		'button-text': 'Online Menu',
 		'button-url':
 			'https://app.upserve.com/s/picas-mexican-taqueria-jackson-jackson',
-		'menu-url': 'https://www.picastaqueria.com/menus/'
+		'menu-url': 'https://www.picastaqueria.com/menus/',
 	},
 	{
 		restaurant: 'Hand Fire Pizza',
@@ -74,7 +74,7 @@ const restaurants = [
 		'phone-number': '(307) 733-7199',
 		'button-text': 'Online Menu',
 		'button-url': 'https://ordering.orders2.me/menu/handfirepizza',
-		'menu-url': ''
+		'menu-url': '',
 	},
 	{
 		restaurant: 'Cutty’s',
@@ -83,7 +83,7 @@ const restaurants = [
 		'phone-number': '(307) 201-1079',
 		'button-text': 'Online Menu',
 		'button-url': 'https://direct.chownow.com/order/13069/locations/18300',
-		'menu-url': ''
+		'menu-url': '',
 	},
 	{
 		restaurant: 'Teton Tiger',
@@ -92,7 +92,7 @@ const restaurants = [
 		'phone-number': '(307) 733-4111',
 		'button-text': 'Order By Phone',
 		'button-url': 'tel:(307) 733-4111',
-		'menu-url': 'http://www.tetontiger.com/'
+		'menu-url': 'http://www.tetontiger.com/',
 	},
 	{
 		restaurant: 'Cowboy Coffee',
@@ -102,8 +102,8 @@ const restaurants = [
 		'button-text': 'Online Menu',
 		'button-url':
 			'https://us.orderspoon.com/cowboycoffee?fbclid=IwAR0-O6U-NMAeKquC8wMB92M-JVN5wdr2vQSz9SwJlGb-ErcHcccWVrxNXvw',
-		'menu-url': ''
-	}
+		'menu-url': '',
+	},
 ];
 
 const btnAll = document.getElementById('all-filter');
@@ -112,7 +112,7 @@ const btnTakeout = document.getElementById('takeout');
 let el = document.querySelectorAll('.card');
 // console.log(el);
 
-btnAll.onclick = function() {
+btnAll.onclick = function () {
 	alert("Show's All Options");
 
 	// let i;
@@ -122,10 +122,15 @@ btnAll.onclick = function() {
 	// }
 };
 
-btnDelivery.onclick = function() {
+btnDelivery.onclick = function () {
 	alert("Get's Delivery Options");
 };
 
-btnTakeout.onclick = function() {
+btnTakeout.addEventListener('click', function () {
+	alert("Get's Delivery Options");
+});
+
+btnTakeout.onclick = function () {
 	alert("Get's Takeout Only Options");
 };
+s;
