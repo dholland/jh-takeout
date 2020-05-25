@@ -1,0 +1,223 @@
+/* @import url(./curcukarStd.css); */
+
+@import url('https://fonts.xz.style/serve/inter.css');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	background-color: #f5f3ed;
+	color: rgb(97, 96, 96);
+}
+
+header {
+	width: 100vw;
+	height: 100px;
+	background-color: white;
+}
+
+header h1 {
+	display: block;
+	text-align: center;
+	padding-top: 30px;
+	font-family: 'Inter', ststem-ui, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 3em;
+	line-height: 36px;
+	letter-spacing: -0.75px;
+	color: rgb(73, 72, 72);
+}
+
+.container {
+	margin: 0 auto;
+	width: 90vw;
+	height: 100vh;
+}
+
+.filters {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.filters p {
+	padding-top: 8px;
+}
+
+.filters button {
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-family: inherit;
+	background-color: #f39a38;
+	border: 0;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 16px 0px;
+	margin-left: 10px;
+}
+
+.filters button:hover {
+	background-color: #415f8d;
+	color: #fff;
+}
+
+.restaurants-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 40%;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding-top: 18px;
+	padding-bottom: 30px;
+	padding-left: 24px;
+	padding-right: 24px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 16px 0px;
+	border-radius: 6px;
+	max-width: 100%;
+	border-bottom: 2px solid coral;
+	transition: all 0.05s ease-out 0s;
+	position: relative;
+}
+
+.card-2 {
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	padding-top: 18px;
+	padding-bottom: 30px;
+	padding-left: 24px;
+	padding-right: 24px;
+	background-color: transparent;
+	box-shadow: 5px 5px 7px #e6e4df, -5px -5px 7px #fffffb;
+	border-radius: 6px;
+	max-width: 100%;
+	border-bottom: 2px solid coral;
+	transition: all 0.05s ease-out 0s;
+	position: relative;
+}
+
+.card:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 16px 32px 0px;
+	transform: scale(1.01);
+}
+
+.card .card-bar {
+	display: block;
+	background-color: salmon;
+	height: 5px;
+	position: relative;
+	top: -20px;
+}
+
+.card h2 {
+	color: rgb(49, 57, 66);
+	padding: 8px 0;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+}
+
+.card .phone {
+	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.card .description {
+	min-height: 50px;
+	margin-top: 10px;
+	padding-top: 10px;
+	max-width: 75%;
+	border-top: 1px solid rgba(66, 68, 95, 0.199);
+}
+
+.card .description p {
+	text-align: justify;
+}
+
+.tags {
+	margin-top: 15px;
+}
+
+.tags span {
+	background-color: #f4a460;
+	border-radius: 15px;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.25px;
+	line-height: 18px;
+	margin: 0px 10px 6px 0px;
+	padding: 3px 10px;
+}
+
+.tags span:hover {
+	background-color: #ffc99a;
+}
+
+.actions {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+
+.actions a {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.actions .order {
+	display: inline-block;
+	font-family: inherit;
+	color: white;
+	margin-left: 10px;
+	font-size: 1.2em;
+	padding: 8px 10px;
+	border: 0;
+	background-color: #415f8d;
+}
+
+.actions button:hover {
+	background-color: #f39a38;
+}
+
+.actions .menu {
+	display: inline-block;
+	font-family: inherit;
+	color: white;
+	margin-left: 10px;
+	font-size: 1.2em;
+	padding: 8px 10px;
+	border: 0;
+	background-color: #415f8d;
+}
+
+footer {
+	padding: 50px 0px;
+	height: 100px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+	background-color: tomato;
+}
+
+@media (max-width: 725px) {
+	.card {
+		flex: 1 0 100%;
+	}
+}
